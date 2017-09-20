@@ -6,7 +6,7 @@ This is the source code for my tutorial: [How to Build a CMS in Ruby on Rails](h
 
 ## Getting Started
 
-Best way to get started is to take a look at the [example blog app](https://github.com/pch/beknown-example-blog).
+Best way to get started is to take a look at the [example blog app](https://github.com/BPParham/beknown-example-blog).
 
 ## License
 

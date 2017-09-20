@@ -7,8 +7,8 @@ require "beknown/version"
 Gem::Specification.new do |s|
   s.name        = "beknown"
   s.version     = Beknown::VERSION
-  s.authors     = ["Piotr Chmolowski"]
-  s.email       = ["piotr@chmolowski.pl"]
+  s.authors     = ["Piotr Chmolowski","Bobby Parham"]
+  s.email       = ["piotr@chmolowski.pl","bpparham@yahoo.com"]
   s.homepage    = "http://pchm.co"
   s.summary     = "Rails & Postgres CMS Engine"
   s.description = "Rails & Postgres CMS Engine (from the turorial on my blog)."

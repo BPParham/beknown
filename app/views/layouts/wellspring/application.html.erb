@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beknown</title>
+  <%= stylesheet_link_tag    "beknown/application", media: "all" %>
+  <%= javascript_include_tag "beknown/application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav class="side-panel">
+    <h1>Beknown</h1>
+
+    <ul>
+      <li>
+        <%= link_to beknown.root_path do %>
+          <i class="fa fa-dashboard"></i> Dashboard
+        <% end %>
+      </li>
+    </ul>
+
+    <ul>
+      <% Beknown.configuration.content_classes.each do |class_name| %>
+        <li>
+          <%= link_to class_name.tableize.titleize, entries_path(content_class: class_name.tableize) %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="wrapper wrapper-flash">
+      <%= render partial: "beknown/shared/flash_messages", flash: flash %>
+    </div>
+
+    <%= yield %>
+  </div>
+</body>
+</html>
